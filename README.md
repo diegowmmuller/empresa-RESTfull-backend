@@ -26,15 +26,17 @@ Esta é uma API RESTful para gerenciar um cadastro de pessoas. Desenvolvida com 
 
 ## 📁 Estrutura de Pastas
 
-.
-├── index.js
-├── db.js
-├── models/
-│ └── Pessoa.js
-├── routes/
-│ └── pessoa.routes.js
-├── .env
-└── package.json
+api-cadastro-pessoas/  
+├── index.js → Ponto de entrada da aplicação  
+├── db.js → Conexão com o MongoDB via Mongoose  
+├── .env → Variáveis de ambiente  
+├── package.json → Dependências do projeto  
+├── models/ → Schemas do Mongoose  
+│ └── Pessoa.js → Schema da entidade Pessoa  
+├── routes/ → Rotas REST da aplicação  
+│ └── pessoa.routes.js → Rotas para cadastro de pessoas
+
+---
 
 ## 📬 Endpoints da API
 
