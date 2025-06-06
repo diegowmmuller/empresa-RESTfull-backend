@@ -112,4 +112,4 @@ estudoTS/
 
 ---
 
-Feito com 💻 por [Seu Nome]
+Feito com 💻 por @diegowmmuller
