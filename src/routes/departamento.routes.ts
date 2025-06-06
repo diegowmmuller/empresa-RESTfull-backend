@@ -1,0 +1,15 @@
+import { Router } from "express";
+import { DepartamentoController } from "../controllers/departamento.controller.js";
+import { handler } from "../middlewares/handler.js";
+
+const router = Router();
+
+const controller = new DepartamentoController();
+
+router.post("/", handler(controller, "criarDepartamento"));
+router.get("/", handler(controller, "listarDepartamentos"));
+router.get("/:id", handler(controller, "buscarDepartamentoPorId"));
+router.put("/:id", handler(controller, "atualizarDepartamento"));
+router.delete("/:id", handler(controller, "deletarDepartamento"));
+
+export default router;
